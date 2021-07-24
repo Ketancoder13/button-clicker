@@ -107,10 +107,10 @@ mySprite = sprites.create(img`
     ......ffccccbbbbbbbbbbbbff......
     ........ffffffffffffffff........
     `, SpriteKind.Player)
-game.splash("Press A to get points Get 100pt(clicks) to win")
+game.splash("Press A to get points Get 90pt(clicks) to win")
 info.startCountdown(20)
 forever(function () {
-    if (info.score() == 100) {
-    	
+    if (info.score() == 90) {
+        game.over(true)
     }
 })
